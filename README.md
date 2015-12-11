@@ -1,7 +1,7 @@
 uptime-hipchat
 ==============
 
-It's a simple plugin to provide room notification for [Hipchat](https://hipchat.com/) for the Uptime app by [@fzaninotto](https://github.com/fzaninotto).
+It's a simple plugin to provide room notification for [Hipchat](https://hipchat.com/) for the [Uptime](https://github.com/fzaninotto/uptime) app by [@fzaninotto](https://github.com/fzaninotto).
 
 
 Installing
