@@ -40,7 +40,7 @@ More information about the supported colours: [https://www.hipchat.com/docs/api/
 License
 -------
 
-This code is free to use and distribute, under the [MIT license](https://raw.github.com/acoquoin/uptime-hipchat/master/LICENSE).
+This code is free to use and distribute, under the [MIT license](https://github.com/acoquoin/uptime-hipchat/blob/master/LICENSE).
 
 TODO
 ----
