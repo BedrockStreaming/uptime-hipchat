@@ -40,9 +40,11 @@ exports.initWebApp = function(options) {
         throw new Error('Missing Hipchat token');
     }
     dashboard.on('populateFromDirtyCheck', function(checkDocument, dirtyCheck, type) {
-        checkDocument.setPollerParam('hipchat', dirtyCheck.hipchat.split(/,|;|\/|\|/gi).map(function(room) {
-          return room.toLowerCase().trim();
-        }).join('; '));
+        if(dirtyCheck.hipchat) {
+            checkDocument.setPollerParam('hipchat', dirtyCheck.hipchat.split(/,|;|\/|\|/gi).map(function(room) {
+              return room.toLowerCase().trim();
+            }).join('; '));
+        }
     });
     dashboard.on('checkEdit', function(type, check, partial) {
         partial.push(ejs.render(fs.readFileSync(__dirname + '/views/edit.ejs', 'utf8'), {locals: {check: check}}));
